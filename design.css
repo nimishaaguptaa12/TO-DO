@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0; 
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: rgb(23, 21, 21);
+    background-size: cover;
+    display: flex;
+    height: 350px;
+}
+
+main{
+    background-color: rgb(23, 21, 21);
+    background-size: cover;
+    display: flex;
+    height: 500px
+}
+
+.head{
+    display: flex;
+    padding: 3px;
+    justify-content: space-between;
+    background-color: black  ;
+    color: white;
+}
+
+.name{
+    padding-top: 15px;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+.content{
+    
+    background-size: cover;
+    display: flex;
+    height: 250px;
+}
+
+.content_box{
+    padding: 50px 50px 15px 100px;
+    width: 500px;
+    height: 100px;
+}
+
+.welcome{
+    font-size: 25px;
+    color: white;
+    height: 80px;
+    font-weight: bold;
+}
+
+.image{
+    padding: 25px 50px 15px 350px;
+    width: 300px;
+    height: 250px;
+}
+
+.todo{
+    border-radius: 5%;
+}
+
+h3{
+    padding-right: 50px;
+    padding-left: 10px;
+}
+
+.container{
+    position: relative;
+    max-width: 700px;
+    padding: 10px;
+    margin: 0;
+}
+
+.add-task{
+    width: 100%;
+    display: flex;
+    padding-left: 25px ;
+    padding-top: 50px;
+    padding-right: 15px;
+}
+
+.addtask > input[type="text"]{
+    width: 100%;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: none;
+    padding: 20px;
+    font-size: 22px;
+    outline: none;
+}
+
+.addtask button{
+    margin: 0 10px;
+    background: #222;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.notcompleted, .completed{
+    margin: 5px 0;
+    padding: 20px;
+}
+
+h3{
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+ol{
+    list-style: none;
+}
+
+ol li{
+    width: 100%;
+    padding: 18px;
+    margin: 5px 0;
+    background: white;
+    font-size: 22px;
+    counter-increment: my-counter;
+}
+
+ol.completed li{
+    background: white;
+}
+
+ol li::before{
+    content: counter(my-counter);
+    background: black;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    text-align: center;
+    color: #fff;
+    margin-right: 0.5rem;
+}
+
+li button{
+    float: right;
+    padding: 5px;
+    font-size: 28px;
+    line-height: 28px;
+    margin-right: 15px;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
